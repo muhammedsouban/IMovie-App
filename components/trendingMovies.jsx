@@ -15,6 +15,7 @@ export default TrendingMovies = ({ data }) => {
     return (
         <View style={styles.container}>
             <Text style={styles.title}>Trending</Text>
+            
             <Carousel
                 data={data}
                 renderItem={({ item }) => <MovieCard item={item} handleClick={handleClick} />}
